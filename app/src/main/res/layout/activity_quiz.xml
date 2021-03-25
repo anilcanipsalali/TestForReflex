@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="16dp"
+    tools:context=".activities.QuizActivity">
+
+    <TextView
+        android:id="@+id/textViewQuestionCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questionCount"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/robotobold"/>
+
+    <Chronometer
+        android:id="@+id/textViewCountdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Here will be the question text\nHere will be the question text\nHere will be the question text\nHere will be the question text"
+        android:textSize="20sp"
+        android:layout_below="@id/textViewCountdown"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/optionA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/optionB"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/background_button"
+        android:fontFamily="@font/robotomedium"
+        android:minWidth="150dp"
+        android:text="@string/optionA"
+        android:textColor="#fff" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/optionB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/optionC"
+        android:background="@drawable/background_button"
+        android:fontFamily="@font/robotomedium"
+        android:minWidth="150dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/optionB"
+        android:textColor="#fff" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/optionC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/optionD"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/background_button"
+        android:fontFamily="@font/robotomedium"
+        android:minWidth="150dp"
+        android:text="@string/optionC"
+        android:textColor="#fff" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/optionD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_button"
+        android:fontFamily="@font/robotomedium"
+        android:minWidth="150dp"
+        android:text="@string/optionD"
+        android:textColor="#fff"
+        android:layout_marginBottom="30dp"/>
+
+
+</RelativeLayout>

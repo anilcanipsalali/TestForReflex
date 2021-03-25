@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Test For Reflex</string>
+    <string name="start">START</string>
+    <string name="high_score">High Score:</string>
+    <string name="countdown">00:30</string>
+    <string name="questionCount">Question: 1/x</string>
+    <string name="optionD">Option D</string>
+    <string name="optionC">Option C</string>
+    <string name="optionB">Option B</string>
+    <string name="optionA">Option A</string>
+</resources>
