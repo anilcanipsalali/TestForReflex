@@ -48,16 +48,18 @@ public class QuizDBHelper extends SQLiteOpenHelper {
     }
 
     private void fillQuestionsTable() {
-        Question q1 = new Question("A is correct", "A", "B", "C", "D", 1);
+        Question q1 = new Question("85-23 = ?", "61", "62", "63", "64", 2);
         addQuestion(q1);
-        Question q2 = new Question("B is correct", "A", "B", "C", "D", 2);
+        Question q2 = new Question("210+110 = ?", "320", "330", "310", "300", 1);
         addQuestion(q2);
-        Question q3 = new Question("C is correct", "A", "B", "C", "D", 3);
+        Question q3 = new Question("√(12) = ?", "3.4425463234", "3.45358334452", "3.46410161514", "3.473486835", 3);
         addQuestion(q3);
-        Question q4 = new Question("D is correct", "A", "B", "C", "D", 4);
+        Question q4 = new Question("86/4 = ?", "22.5", "24", "23.5", "21.5", 4);
         addQuestion(q4);
-        Question q5 = new Question("A is correct again", "A", "B", "C", "D", 1);
+        Question q5 = new Question("((94-120) x 12 ) - 29 = ?", "-341", "-340", "-331", "-321", 1);
         addQuestion(q5);
+        Question q6 = new Question("12  - 29 = ?", "-17", "17", "19", "-19", 1);
+        addQuestion(q6);
     }
 
     private void addQuestion(Question question) {
